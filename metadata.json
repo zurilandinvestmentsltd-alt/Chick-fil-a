@@ -1,0 +1,6 @@
+{
+  "name": "Chick-fil-A Experience",
+  "description": "More than a meal. It's a My Pleasure moment. Hand-breaded chicken, exceptional service, and family values.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["Responsive Design", "Interactive Menu", "Location Search"]
+}

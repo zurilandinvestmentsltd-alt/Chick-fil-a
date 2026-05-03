@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Nunito Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display", serif;
+  
+  --color-cfa-red: #DD0031;
+  --color-cfa-gold: #F5A623;
+  --color-cfa-cream: #FFF8F0;
+  --color-cfa-gray: #1A1A1A;
+
+  --animate-shimmer: shimmer 2s infinite linear;
+
+  @keyframes shimmer {
+    0% { background-position: -1000px 0; }
+    100% { background-position: 1000px 0; }
+  }
+}
+
+@layer base {
+  body {
+    @apply text-cfa-gray bg-white antialiased;
+  }
+  
+  h1, h2, h3 {
+    @apply font-display;
+  }
+}
+
+.markdown-body {
+  @apply font-sans;
+}
+
+.shimmer-bg {
+  background: linear-gradient(to right, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%);
+  background-size: 1000px 100%;
+}
